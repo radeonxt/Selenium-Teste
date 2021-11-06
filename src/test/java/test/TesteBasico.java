@@ -15,8 +15,9 @@ public class TesteBasico {
 	}
 
 	protected static void inicializarDriver() {
-		System.setProperty("webdriver.chrome.driver", "C:/drivers-selenium/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "/home/alex/Documents/selenium/chromedriver");
 		TesteBasico.driver = new ChromeDriver();
+		driver.manage().window().maximize();
 		
 	}
 	
